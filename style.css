@@ -1069,7 +1069,7 @@ main {
     position: fixed;
     z-index: 30000;
     left: 50%;
-    bottom: 18px;
+    bottom: 60px;
     transform: translateX(-50%);
     width: min(370px, calc(100% - 30px));
     display: flex;
