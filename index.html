@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- ADEGAN 1: AMPLOP -->
+        <section class="scene" id="envelopeScene">
+            <p class="top-text">SOMETHING SPECIAL FOR YOU</p>
+
+            <div class="envelope" id="envelope">
+                
+               
+                <div class="letter" id="letter">
+                    <h2>Pengingat kecil ♡</h2>
+                    <p id="letterMessage"></p>
+                </div>
+
+
+
+                <div class="envelope-back"></div>
+                <div class="flap" id="flap"></div>
+                <div class="envelope-front"></div>
+
+                <button
+                    class="heart-seal"
+                    id="heartSeal"
+                    type="button"
+                    aria-label="Buka amplop"
+                >♥</button>
+            </div>
+
+            <p class="hint" id="hint">
+                Tap the heart to open your letter
+            </p>
+        </section>
+
+        <!-- ADEGAN 2: COUNTDOWN -->
+        <section class="countdown-scene" id="countdownScene" hidden>
+            <p class="countdown-label">A LITTLE SURPRISE FOR YOU</p>
+            <div class="countdown-number" id="countdownNumber">3</div>
+            <div class="countdown-decoration" aria-hidden="true">
+                ♡　✦　♡
+            </div>
+        </section>
+
+        <!-- ADEGAN 3: TULISAN PEMBUKA -->
+        <section class="intro-scene" id="introScene" hidden>
+            <div class="intro-decoration" aria-hidden="true">✦ ♡ ✦</div>
+
+            <p class="intro-small" id="introSmall">
+                FOR MY FAVORITE PERSON
+            </p>
+
+            <h1 id="introTitle">Every little moment...</h1>
+
+            <p class="intro-message" id="introMessage">
+                ...has become one of my favorite memories.
+            </p>
+
+            <div
+                class="intro-decoration bottom-decoration"
+                aria-hidden="true"
+            >♡　✧　♡</div>
+        </section>
+
+        <!-- ADEGAN 4: FOTO KENANGAN -->
+        <section class="gallery-scene" id="galleryScene" hidden>
+            <p class="gallery-eyebrow">OUR LITTLE UNIVERSE</p>
+            <h2 class="gallery-title">Pieces of Us ♡</h2>
+
+            <p class="gallery-subtitle">
+                Little moments, precious memories.
+            </p>
+
+            <div class="memory-gallery">
+                <figure class="memory-card" style="--rotation: -3deg">
+                    <img src="images/2.jpeg" alt="Kenangan kita 1">
+                    <figcaption>one of my favorite days ♡</figcaption>
+                </figure>
+
+                <figure class="memory-card" style="--rotation: 2deg">
+                    <img src="images/4.jpeg" alt="Kenangan kita 2">
+                    <figcaption>just us, being us</figcaption>
+                </figure>
+
+                <figure class="memory-card" style="--rotation: -2deg">
+                    <img src="images/3.jpeg" alt="Kenangan kita 3">
+                    <figcaption>a moment to keep ✦</figcaption>
+                </figure>
+
+                <figure class="memory-card" style="--rotation: 3deg">
+                    <img src="images/1.jpeg" alt="Kenangan kita 4">
+                    <figcaption>my favorite person</figcaption>
+                </figure>
+            </div>
+
+            <p class="gallery-footer">
+                and many more memories to make... ♡
+            </p>
+
+            <!-- TOMBOL PEMBUKA KEJUTAN -->
+            <div class="birthday-reveal">
+                <p class="reveal-hint">a little something for you ♡</p>
+
+                <div class="memory-string">
+                    <button
+                        type="button"
+                        class="birthday-charm"
+                        id="birthdayCharm"
+                        aria-label="Buka kejutan ulang tahun"
+                    >💌</button>
+                </div>
+
+                <p class="reveal-caption">tap to reveal your surprise</p>
+            </div>
+        </section>
+
+        <!-- ADEGAN 5: HAPPY BIRTHDAY -->
+        <section class="birthday-scene" id="birthdayScene" hidden>
+            <div class="party-decor decor-left">🎈 🎉 🌷</div>
+            <div class="party-decor decor-right">🎊 🎈 🧸</div>
+
+            <div class="birthday-content">
+                <p class="birthday-small">TODAY IS ALL ABOUT YOU ♡</p>
+
+                <div class="birthday-cake">🎂</div>
+
+                <h1 class="birthday-title">
+                    HAPPY<br>
+                    BIRTHDAY<br>
+                    SAYANGG
+                    <span>♡</span>
+                </h1>
+
+                <p class="birthday-message">
+                    Another year, another reason to celebrate you ✨
+                </p>
+
+                <div class="birthday-stickers">💗 🧸 🎁 💐 💗</div>
+
+                <p class="birthday-wish">
+                    May your days be filled with love and happiness.
+                </p>
+
+                <!-- TOMBOL NAVIGASI -->
+                <div class="birthday-navigation">
+                    <button
+                        type="button"
+                        id="backToPhotosBtn"
+                        class="back-to-photos-btn"
+                        aria-label="Kembali ke foto kenangan"
+                        title="Kembali ke foto"
+                    >📸</button>
+
+                    <button
+                        id="showLetterBtn"
+                        class="show-letter-btn"
+                        type="button"
+                        aria-label="Buka pesan"
+                        title="Buka surat"
+                    >↓</button>
+                </div>
+
+                <p class="back-to-photos-caption">
+                    📸 OUR MEMORIES　♡　OPEN YOUR LETTER ↓
+                </p>
+
+                <!-- SURAT ULANG TAHUN -->
+                <div class="letter-container" id="letterContainer" hidden>
+                    <div class="birthday-letter">
+                        <span class="message-heart">💌</span>
+                        <h2>A Little Message for You</h2>
+
+                        <p>
+                            Happy Birthday, sayanggg! ❤️🎂
+                            <p>happiest birthday to my favorite boy! 🫶🏻</p>
+
+                            <p>selamat ulang tahun yaa sayangg, semoga di umur kamu yang sekarang, kamu selalu sehat, bahagia, dilancarkan semua urusannya, dan apa pun yang lagi kamu usahain sekarang bisa dapet hasil yang kamu mauu.</p>
+
+                            <p>aku harap kamu selalu dikelilingi hal-hal baik, ketemu banyak kebahagiaan, dan punya banyak alasan buat senyum setiap harinya. kalaupun nanti ada hari yang bikin kamu capek atau ngerasa semuanya ga berjalan sesuai keinginan kamu, jangan nyerah yaa sayangg. pelan-pelan aja, kamu ga harus selalu kuat setiap saat kok.
+
+                            <p>makasih yaa udah hadir di hidup aku. makasih udah jadi kamu yang aku kenal sekarang, yang tanpa sadar bisa bikin hari-hari aku jadi lebih berwarna. aku seneng bisa kenal kamu, bisa punya cerita sama kamu, dan bisa ngerayain hari spesial kamu kayak gini. ❤️
+
+                            <p>aku mungkin bukan orang yang paling hebat dalam nunjukin rasa sayang, kadang juga bingung harus ngomong apa biar kamu ngerti seberapa berartinya kamu buat aku. but trust me, you mean a lot to me, sayang. 💗
+
+                            <p>aku ga bisa janji semuanya bakal selalu berjalan sesuai yang kita mau, tapi aku harap kita bisa terus belajar buat saling ngerti, saling jaga, dan bikin banyak kenangan bareng. aku pengen liat kamu tumbuh jadi versi diri kamu yang kamu banggain, ngejar semua mimpi kamu, dan ngerasain banyak hal baik yang mungkin sekarang masih kamu doain.
+
+                            <p>pokoknyaa, jangan lupa bahagia yaa sayangg. jangan sering-sering ngerasa kurang, karena aku harap kamu juga bisa liat hal-hal baik yang ada di diri kamu sendiri, sama kayak aku yang bisa ngeliat itu di kamu. 🤍
+
+                            <p>sekali lagi, happy birthday, sayangku! semoga wishlist kamu satu-satu bisa kecapai, rezekinya makin lancar, sehat selalu, dan panjang umurrr. semoga tahun ini jadi tahun yang lebih baik buat kamu.
+
+                            <p>i love you so much, sayanggg. ❤️
+
+                            <p>semoga aku masih bisa nemenin kamu di ulang tahun berikutnya, dan berikutnya lagi. pokoknya semoga masih banyak tanggal spesial yang bisa kita rayain bareng yaa. 🎀
+
+                            <p>stay happy, stay healthy, and stay with me. ❤️
+
+                        </p>
+
+                        <span class="message-signature">
+                            from your favorite girl, who loves you a little more every day, always ♡❤️
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confetti confetti-one">✦</div>
+            <div class="confetti confetti-two">♥</div>
+            <div class="confetti confetti-three">✧</div>
+            <div class="confetti confetti-four">✦</div>
+            <div class="confetti confetti-five">♥</div>
+        </section>
+    </main>
+
+    <!-- MUSIK -->
+    <audio id="birthdayAudio" autoplay loop preload="auto">
+        <source src="music/c.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MINI MUSIC PLAYER -->
+    <div class="music-player" id="musicPlayer">
+        <div class="album-cover">🎵</div>
+
+        <div class="music-info">
+            <span class="music-label">NOW PLAYING ♡</span>
+            <strong id="songTitle"> ❤️ ❤️ ❤️</strong>
+            <span id="songArtist">a little song for you ♥</span>
+
+            <div class="music-progress">
+                <div class="music-progress-fill" id="musicProgress"></div>
+            </div>
+        </div>
+
+        <button
+            id="musicToggle"
+            class="music-toggle"
+            type="button"
+            aria-label="Putar atau jeda lagu"
+        >Ⅱ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
